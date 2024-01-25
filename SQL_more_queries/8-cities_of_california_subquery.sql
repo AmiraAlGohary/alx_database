@@ -2,8 +2,8 @@
 
 USE hbtn_0d_usa;
 
-SELECT c.id, c.name
-FROM states s
-JOIN cities c ON s.id = c.state_id
+SELECT cities.id, cities.name
+FROM states
+JOIN cities ON states.id = cities.state_id
 
-ORDER BY c.id
+ORDER BY cities.id
