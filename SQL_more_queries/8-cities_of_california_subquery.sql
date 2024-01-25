@@ -4,7 +4,6 @@ USE hbtn_0d_usa;
 
 SELECT c.id, c.name
 FROM states s
-JOIN cities c
-WHERE s.id = c.state_id
+JOIN cities c ON s.id = c.state_id
 
 ORDER BY c.id
