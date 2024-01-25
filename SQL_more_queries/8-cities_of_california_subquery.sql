@@ -7,4 +7,4 @@ FROM states s
 JOIN cities c
 WHERE s.id = c.state_id
 
-ORDER BY cities.id
+ORDER BY c.id
