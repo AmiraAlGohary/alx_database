@@ -2,7 +2,7 @@
 
 USE hbtn_0d_usa;
 
-SELECT c.name
+SELECT c.id, c.name
 FROM states s
 JOIN cities c
 WHERE s.id = c.state_id
